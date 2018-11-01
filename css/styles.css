@@ -1,0 +1,35 @@
+h1{
+  text-align: center;
+}
+h2  {
+  text-align: center;
+}
+button {
+  margin-left: 2%;
+}
+.output1 {
+  color: #114fb2;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.output2 {
+  color: #114fb2;
+  font-weight: bold;
+  font-size: 20px;
+}
+.p1,
+.p2{
+  width: 50%;
+  float: left;
+}
+.container {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+body {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  background-color: lightblue;
+}

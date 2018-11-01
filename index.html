@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" href="/css/master.css">
+    <link href="css/styles.css" rel="stylesheet" href="/css/master.css">
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    </script>
+    <title>Pig Dice</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+        <h1>Pig Dice</h1>
+    </div>
+    <div class="jumbotron">
+      <div class="container-fluid">
+         <h2>Roll a dice rules</h2>
+         <br>
+         <p>Each turn player repeatedly rolls a dice until either 1 is rolled or player decides to "hold".</p><br>
+         <ul>
+           <li>If player rolls 1, they score nothing and it's next players turn</li>
+           <li>If the player rolls any other number it's added to their turn total and the players turn continues</li>
+           <li>If player chooses "hold" their tyrn total is added to their score and it's next player's turn</li>
+         </ul><br>
+         <p>First player to score 100 points wins.</p>
+
+      </div>
+    </div>
+      <hr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+        <form id="name">
+          <div class="players">
+            <h4>Please enter players name:</h4>
+              <label for="playerOne">Player 1: </label>
+              <input type="text"  class="form-control" id="name1" required>
+              <br>
+              <label for="playerTwo">Player 2: </label>
+              <input type="text"  class="form-control" id="name2" required>
+              <br>
+          </div>
+        </div>
+          <button type="submit" class="button">Create Name</button>
+        </form>
+    </div>
+  </div>
+        <hr>
+    <div class="p1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="output1"></div>
+            <form id=playerOne>
+              <label for="playerOne-roll">Roll or Hold</label>
+              <br>
+              <button type="button" id="diceRoll1" class="btn btn-danger">Roll</button>
+              <hr>
+              <h6 id="diceResult1"></h6>
+              <br>
+              <button id="diceHold1" class="btn btn-success">Hold</button>
+              <hr>
+              <p id="roundScore1"></p>
+              <p id="totalScore1"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="output2"></div>
+            <form id=playerTwo>
+              <label for="playerOne-roll">Roll or Hold</label>
+              <br>
+              <button type="button" id="diceRoll2" class="btn btn-danger">Roll</button>
+              <hr>
+              <h6 id="diceResult2"></h6>
+              <br>
+              <button id="diceHold2" class="btn btn-success">Hold</button>
+              <hr>
+              <p id="roundScore2"></p>
+              <p id="totalScore2"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
